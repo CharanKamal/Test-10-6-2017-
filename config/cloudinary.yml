@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dnie19rum
+  api_key: '134478311826339'
+  api_secret: mPT45OQLZEv-Xl7Oq7DxzHdbASc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dnie19rum
+  api_key: '134478311826339'
+  api_secret: mPT45OQLZEv-Xl7Oq7DxzHdbASc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dnie19rum
+  api_key: '134478311826339'
+  api_secret: mPT45OQLZEv-Xl7Oq7DxzHdbASc
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,0 +1,21 @@
+<% if current_user %>
+<p><%=current_user.first_name%>-<%=current_user.last_name%></p><br><br>
+
+<p><%=image_tag(current_user.image_url)%></p><br><br><br>
+
+<h3>Projects</h3>
+<!-- <table>
+<%#= @projects.each do |project| %>
+<tr>
+	<td><%#= project.name %></td>
+	<td><%#= project.start_date %></td>
+	<td><%#= project.end_date %></td>
+</tr>
+</table> -->
+<p><%= link_to "Create Project",new_user_project_path(current_user) %></p>
+<p><%= link_to "Logout", logout_path,method: :delete %></p>
+<%# end %>
+
+<% else %>
+<p><%= link_to "Login",login_path %></p>
+<% end %>
